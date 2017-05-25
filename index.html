@@ -8,6 +8,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+                <link rel="stylesheet" href="css/theme/black-custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +25,26 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+                            <section data-markdown class="title">
+                                <textarea data-template>
+
+# Easily scale enterprise applications using distributed data grids
+
+<br/>
+
+<p>Ondrej Mihályi</p>
+<p style="font-size: 70%">@omihalyi</p>
+
+                                </textarea>
+                            </section>
+                            <section data-markdown class="regular">
+                                <textarea data-template>
+# Test
+
+- 1
+- 2
+                                </textarea>
+                            </section>
 			</div>
 		</div>
 
@@ -37,6 +56,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+                                history: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
