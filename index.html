@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Easily scale enterprise applications using distributed data grids</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -35,8 +35,13 @@
 <p>Ondrej Mihályi</p>
 <p style="font-size: 70%">@omihalyi</p>
 
+<aside class="notes">
+    
+</aside>
                                 </textarea>
                             </section>
+                            
+                            
                             <section data-markdown class="regular">
                                 <textarea data-template>
 <span class="template"/>
@@ -44,9 +49,70 @@
 
 - 1
 - 2
+
+<aside class="notes">
+    What scalable application is.
+    
+    More people to do the job doesn't have to do it faster.
+    
+    We wish so - if only we could organize well, e.g. parallel assembly lines scale.
+    
+    Goal: add more resources to do the job faster.
+    
+    Vertical scaling always works, but inefficient - everything is scaled, fast made even faster, slow is not faster enough.
+    
+    We're after horizontal scaling to distribute load better and efficiently. Slow gets faster, fast isn't faster and doesn't race for resources with slower. 
+    
+</aside>
                                 </textarea>
                             </section>
-			</div>
+
+                            <section data-markdown class="regular">
+                                <textarea data-template>
+<span class="template"/>
+
+Horizontal scaling
+
+<aside class="notes">
+    Horizontal scaling brings challenges
+     - distributed programming model
+     - increased communication (+latency and -throughput)
+     - shared state
+     
+    Amdahl's law: https://en.wikipedia.org/wiki/Amdahl%27s_law
+     - similar to the problem of adding people to a job
+     - more resources don't always mean a significant speed up
+     - application needs to be able to utilize those resources, avoiding bottlenecks
+     - in the same way as adding new intercity highways doesn't help traffic in a city center
+     
+</aside>
+                                </textarea>
+                            </section>
+                        
+                            <section data-markdown class="regular">
+                                <textarea data-template>
+<span class="template"/>
+
+Horizontal scaling
+
+<aside class="notes">
+    Distributed memory and datagrids can help with horizontal scaling
+     - distributed shared state
+       - no need to synchronize through a central point (DB)
+       - distributed persistence out of the box
+       - data replication and recovery out of the box
+     - simplify communication
+       - possible to send data and instructions easily to any node
+       - often no service discovery is needed because nodes are already connected and communicate
+     - simplified programming model
+       - provides abstraction over moving parts (node is up/down, data fetching from a remote node as from local)
+       - simple and well-known interfaces - map, queue, executors
+
+     
+</aside>
+                                </textarea>
+                            </section>
+                        </div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
