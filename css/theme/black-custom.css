@@ -8,7 +8,12 @@
 }
 
 .reveal h1 {
-  font-size: 80px; }
+  font-size: 80px; 
+  margin-top: -0.5em;
+  margin-bottom: 0.5em;
+  color: lightgray;
+  border-bottom: solid lightgray 2px;
+}
 
 .reveal h2 {
   font-size: 1.6em; }
@@ -23,10 +28,71 @@
     height: 90%;
 }
 
+.reveal .slides section strong {
+    text-transform: uppercase;
+}
+
+.reveal .slides section.title h1 {
+    margin-top: 1em;
+}
+
 .reveal .slides section.regular .template::before {
     content: "@omihalyi";
     position: absolute;
     left: 0;
-    bottom: 0px;
-    font-size: 70%;
+    bottom: -20px;
+    font-size: 50%;
+    color: lightgray;
+}
+
+.reveal .slides section.regular.smaller-font ul {
+    font-size: 90%;
+}
+
+.reveal .slides section.regular.small-font ul {
+    font-size: 80%;
+}
+
+.reveal .slides section.regular.small-font > ul > li {
+    margin: 0.1em;
+}
+
+.reveal .slides section.regular > ul {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.reveal .slides section.regular h1 {
+    font-size: 60px;
+}
+
+.reveal .slides section.regular.double-line-header > ul {
+    height: 50%;
+}
+
+.reveal .slides section.regular > ul > li {
+    margin: 0.2em;
+}
+
+.reveal .slides section.regular > ul > li li {
+    margin: 0.1em;
+}
+
+.reveal .slides section.only-title {
+    display: flex !important;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.reveal .slides img.bingo {
+    position:relative;
+    left: 60%;
+}
+
+.reveal .slides img.swarm {
+    position:absolute;
+    right: 0%;
 }

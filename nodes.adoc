@@ -1,0 +1,4 @@
+ Run the demo app 01-simple-app:
+                <ul>
+                    <a href="http://localhost:8080/myapp/application.wadl">WADL </a>
+                </ul>
