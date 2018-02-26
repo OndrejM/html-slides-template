@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Easily scale enterprise applications using distributed data grids</title>
+		<title>TITLE</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -39,21 +39,15 @@
 <p>Ondrej Mihályi</p>
 <p style="font-size: 70%">@omihalyi</p>
 
-<aside class="notes">
-    Q: How many think about a big load upfront?
+<aside class="notes" data-template>
+#    Q: How many think about a big load upfront?
     
-    <ul>
-        <li>some do, good, I almost never did
-        </li>
-        <li>it's not in requirements
-        </li>
-        <li>business don't specify, maybe because they don't know
-        </li>
-        <li>even if specd, the load increases later
-        </li>
-        <li>what about designing apps to adapt them to any load?
-        </li>
-    </ul>
+- some do, good, I almost never did
+- it's not in requirements
+- business don't specify, maybe because they don't know
+- even if specd, the load increases later
+- what about designing apps to adapt them to any load?
+
 </aside>
                                 </textarea>
                             </section>
@@ -186,6 +180,7 @@ More CPU, more RAM, etc.
 <aside class="notes">
      
     Amdahl's law: https://en.wikipedia.org/wiki/Amdahl%27s_law
+    
      - similar to the problem of adding people to a job
      - more resources don't always mean a significant speed up
      - application needs to be able to utilize those resources, avoiding bottlenecks
@@ -214,6 +209,7 @@ More CPU, more RAM, etc.
 
 <aside class="notes">
     Distributed memory and datagrids can help with horizontal scaling
+    
      - distributed shared state
        - no need to synchronize through a central point (DB)
        - distributed persistence out of the box

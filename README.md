@@ -1,5 +1,9 @@
 # Payara slides documentation
 
+# Keyboard shortcuts
+
+Press `?` for help
+
 ## Using markdown
 
 - section has plain `data-markdown` attribute
@@ -36,11 +40,9 @@ The `.templates` element contains following types of templates:
 - Footer for **only-title** slides marked with `only-title-footer` class (also with `footer` class to apply footer markup
 
 
-
-
 ## Print to PDF
 
-- see the `Decktape PDF export folder`
+- see the `Decktape PDF export` folder
 
 
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js) <a href="https://slides.com?ref=github"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>

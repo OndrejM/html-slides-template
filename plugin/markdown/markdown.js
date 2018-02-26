@@ -31,6 +31,8 @@
 	 */
 	function getMarkdownFromSlide( section ) {
 
+                convertHtmlNotesToMarkdown(section);
+
 		// look for a <script> or <textarea data-template> wrapper
 		var template = section.querySelector( '[data-template]' ) || section.querySelector( 'script' );
 
@@ -53,6 +55,17 @@
 		return text;
 
 	}
+        
+        function convertHtmlNotesToMarkdown(section) {
+            var noteElem = section.querySelector( '[data-template]' );
+            if (noteElem) {
+                var noteRegEx = new RegExp( '([^]*<aside[^>]*>)([^]*)(</aside>[^]*)', 'i' );
+                var match = noteRegEx.exec(noteElem.textContent);
+                if (match && match.length >= 4) {
+                    noteElem.textContent = match[1] + marked(match[2]) + match[3];
+                }
+            }
+        }
 
 	/**
 	 * Given a markdown slide section element, this will
