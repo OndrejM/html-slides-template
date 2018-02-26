@@ -1,3 +1,48 @@
+# Payara slides documentation
+
+## Using markdown
+
+- section has plain `data-markdown` attribute
+- markdown should be nested inside section inside textarea tag with `data-template` attribute
+- HTML can be directly embedded into Markdown
+- CSS classes can be added using html comments starting with `.element` :
+     `<!-- .element: class="fragment" data-fragment-index="2" -->`
+     
+## Custom themes
+
+### Black-custom
+
+Files
+
+- `css/themes/black-custom.css`
+
+Each `section` should have a class for slide type:
+
+ - `section.title` - **title** slide
+ - `section.regular` - **regular** slide (most slides like this)
+ - `section.only-title` - slide with just a **caption** (usually separator slides or for DEMO)
+ 
+## Templates
+
+Files
+
+- `js/themes/black-custom.js`
+
+A script modifies all slides and adds templates according to the element with `.templates` css class.
+
+The `.templates` element contains following types of templates:
+
+- Footer for **regular** slides marked with `regular-footer` class (also with `footer` class to apply footer markup
+- Footer for **only-title** slides marked with `only-title-footer` class (also with `footer` class to apply footer markup
+
+
+
+
+## Print to PDF
+
+- see the `Decktape PDF export folder`
+
+
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js) <a href="https://slides.com?ref=github"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://lab.hakim.se/reveal-js/).

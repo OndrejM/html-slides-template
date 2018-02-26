@@ -32,12 +32,18 @@
     text-transform: uppercase;
 }
 
+.reveal .slides section img {
+    margin: 0;
+    border: none;
+    background: transparent;
+}
+
 .reveal .slides section.title h1 {
     margin-top: 1em;
 }
 
-.reveal .slides section.regular .template::before {
-    content: "@omihalyi";
+
+.reveal .slides section .footer {
     position: absolute;
     left: 0;
     bottom: -20px;
@@ -45,6 +51,11 @@
     color: lightgray;
 }
 
+.reveal .slides section .footer img.payara {
+    vertical-align: middle;
+    margin-right: 1em;
+}
+    
 .reveal .slides section.regular.smaller-font ul {
     font-size: 90%;
 }
