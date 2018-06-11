@@ -64,6 +64,10 @@
     font-size: 80%;
 }
 
+.reveal .slides section.only-title.small-font {
+    font-size: 50%;
+}
+
 .reveal .slides section.regular.small-font > ul > li {
     margin: 0.1em;
 }
@@ -94,6 +98,19 @@
 
 .reveal .slides section.regular p {
     text-align: justify ;
+}
+.reveal .slides section.floating > * {
+    float: left;
+}
+.reveal .slides section.floating > ul {
+    height: auto;
+    width: 60%;
+}
+.reveal .slides section.regular h1 {
+    float: none;
+}
+.reveal .slides section.floating > .footer {
+    clear: both;
 }
 .reveal .slides section.only-title {
     display: flex !important;

@@ -1,5 +1,5 @@
 {
-  "name": "reveal.js",
+  "name": "Reveal.js base slide engine"
   "version": "3.5.0",
   "main": [
     "js/reveal.js",
